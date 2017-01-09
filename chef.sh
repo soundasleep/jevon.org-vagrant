@@ -11,4 +11,14 @@ berks vendor cookbooks
 # Now do the magic
 echo ">> Running chef-solo..."
 cd /home/vagrant/chef
-chef-solo -c solo.rb -j openiaml.org.json
+
+execute_chef () {
+  if [ -f "../private/$1" ]; then
+    echo ">> --> $1 (private)"
+    chef-solo -c solo.rb -j "../private/$1"
+  else
+    echo ">> --> $1 (public)"
+    chef-solo -c solo.rb -j "$1"
+  fi
+}
+execute_chef "openiaml.org.json"

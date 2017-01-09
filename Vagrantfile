@@ -55,13 +55,13 @@ Vagrant.configure("2") do |config|
   # information on available options.
 
   # Let's share a common cache omg
-  if Vagrant.has_plugin?("vagrant-cachier")
-    # Configure cached packages to be shared between instances of the same base box.
-    # More info on http://fgrehm.viewdocs.io/vagrant-cachier/usage
-    config.cache.scope = :box
-  else
-    fail "You should have the vagrant-cachier plugin installed to improve your quality of life. Try: `vagrant plugin install vagrant-cachier`"
-  end
+  # if Vagrant.has_plugin?("vagrant-cachier")
+  #   # Configure cached packages to be shared between instances of the same base box.
+  #   # More info on http://fgrehm.viewdocs.io/vagrant-cachier/usage
+  #   config.cache.scope = :box
+  # else
+  #   fail "You should have the vagrant-cachier plugin installed to improve your quality of life. Try: `vagrant plugin install vagrant-cachier`"
+  # end
 
   # Stop 'mesg: ttyname failed: Inappropriate ioctl for device'
   # https://github.com/mitchellh/vagrant/issues/1673
@@ -69,6 +69,9 @@ Vagrant.configure("2") do |config|
 
   # We want to be able to work locally, too
   config.vm.synced_folder "chef", "/home/vagrant/chef"
+
+  # And any private data, if the folder exists
+  config.vm.synced_folder "private", "/home/vagrant/private" if Dir.exists?("private/")
 
   config.vm.provision "shell", path: "init.sh"
   config.vm.provision "shell", path: "chef-init.sh"

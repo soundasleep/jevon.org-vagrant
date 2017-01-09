@@ -10,7 +10,7 @@ vagrant up
 vagrant provision
 ```
 
-Once completed, you should be able to go to http://localhost:8080 and see the Apache2 default page.
+Once completed, you should be able to go to http://localhost:8080 and see the openiaml.org homepage.
 
 # Deploying onto production
 
@@ -20,6 +20,23 @@ and everything will get set up automatically.
 # Features supported
 
 - nothing
+
+# Private data
+
+Some sites have private data that I don't want on GitHub -
+things like version control URLs, usernames, passwords.
+These can all be stored in /private/RECIPE.json and this
+will be picked up with `chef.sh` on init.
+
+# Redeploying a site
+
+**TODO** In theory, just `chef-solo ...` with the specific site JSON... not tested yet...
+
+# Developing Chef recipe changes
+
+1. Make a change to my-cookbooks/RECIPE/recipes/default.rb
+2. Run `./update.sh RECIPE` to rebuild Berksfile.lock and re-vendor cookbooks
+3. Run (as root) `chef-solo ...`, as usual
 
 # TODO (MVP)
 
@@ -57,6 +74,8 @@ and everything will get set up automatically.
 
 # Future ideas
 
+- Disable Apache2 default site
+- Move my-cookbooks/openiaml.org into separate repository
 - Add cucumber testing
 - - Requesting HTTP works
 - - Virtual name-based hosts e.g. `curl -H "Host: mysite.com" http://1.2.3.4` or `curl --resolve example.com:80:1.2.3.4 --resolve example.com:443:2.3.4.5 http://example.com/`

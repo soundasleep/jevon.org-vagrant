@@ -1,6 +1,6 @@
 {
-  "openiaml": {
-
+  "openiaml.org": {
+    "svn": "https://my.secret.server/svn/path"
   },
-  "run_list": [ "recipe[openiaml.org]" ]
+  "run_list": [ "recipe[apt]", "recipe[openiaml.org]" ]
 }
