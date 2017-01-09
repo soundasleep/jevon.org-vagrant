@@ -1,3 +1,5 @@
 source "https://api.berkshelf.com"
 metadata
 
+# TODO add dependency on openiaml.org once it's on version control
+cookbook "openiaml.org",  path: "my-cookbooks/openiaml.org"

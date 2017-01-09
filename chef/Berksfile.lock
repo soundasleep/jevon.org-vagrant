@@ -1,0 +1,12 @@
+DEPENDENCIES
+  jevon.org
+    path: .
+    metadata: true
+  openiaml.org
+    path: my-cookbooks/openiaml.org
+
+GRAPH
+  apache2 (3.2.2)
+  jevon.org (0.1.0)
+  openiaml.org (0.1.0)
+    apache2 (>= 0.0.0)

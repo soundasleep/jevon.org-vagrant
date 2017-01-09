@@ -11,4 +11,4 @@ berks vendor cookbooks
 # Now do the magic
 echo ">> Running chef-solo..."
 cd /home/vagrant/chef
-chef-solo -c solo.rb -j web.json
+chef-solo -c solo.rb -j openiaml.org.json
