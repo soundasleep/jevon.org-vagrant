@@ -12,6 +12,11 @@ vagrant provision
 
 Once completed, you should be able to go to http://localhost:8080 and see the openiaml.org homepage.
 
+# Automated test
+
+You can also run `bundle` then `bundle exec cucumber` to run quick smoke tests
+for each of the deployed sites.
+
 # Deploying onto production
 
 **TODO** In theory, you can run each of the scripts as root from a fresh install,
@@ -19,7 +24,8 @@ and everything will get set up automatically.
 
 # Features supported
 
-- nothing
+- One static HTML application
+- - openiaml.org
 
 # Private data
 
@@ -76,6 +82,4 @@ will be picked up with `chef.sh` on init.
 
 - Disable Apache2 default site
 - Move my-cookbooks/openiaml.org into separate repository
-- Add cucumber testing
-- - Requesting HTTP works
-- - Virtual name-based hosts e.g. `curl -H "Host: mysite.com" http://1.2.3.4` or `curl --resolve example.com:80:1.2.3.4 --resolve example.com:443:2.3.4.5 http://example.com/`
+- Cucumber testing for SSL e.g. `curl -H "Host: mysite.com" http://1.2.3.4` or `curl --resolve example.com:80:1.2.3.4 --resolve example.com:443:2.3.4.5 http://example.com/`
