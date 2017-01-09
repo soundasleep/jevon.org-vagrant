@@ -2,3 +2,4 @@ chef-client-running.pid
 chef-stacktrace.out
 cookbooks/
 nodes/
+local-mode-cache/

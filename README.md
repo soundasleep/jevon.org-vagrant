@@ -10,7 +10,7 @@ vagrant up
 vagrant provision
 ```
 
-**TODO** Once completed, you should be able to go to http://localhost:8080.
+Once completed, you should be able to go to http://localhost:8080 and see the Apache2 default page.
 
 # Deploying onto production
 
@@ -21,7 +21,7 @@ and everything will get set up automatically.
 
 - nothing
 
-# TODO
+# TODO (MVP)
 
 - Domains setup
 - - Jevon.org running (currently PHP, future Rails)
@@ -55,3 +55,8 @@ and everything will get set up automatically.
 - - Adding a new port to close
 - - Modifying fail2ban configuration
 
+# Future ideas
+
+- Add cucumber testing
+- - Requesting HTTP works
+- - Virtual name-based hosts e.g. `curl -H "Host: mysite.com" http://1.2.3.4` or `curl --resolve example.com:80:1.2.3.4 --resolve example.com:443:2.3.4.5 http://example.com/`
