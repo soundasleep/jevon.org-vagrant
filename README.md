@@ -24,8 +24,9 @@ and everything will get set up automatically.
 
 # Features supported
 
-- One static HTML application
+- Two static HTML applications
 - - openiaml.org
+- - [index.jevon.org](https://github.com/soundasleep/index-html) (proof-of-concept)
 
 # Private data
 
@@ -36,7 +37,11 @@ will be picked up with `chef.sh` on init.
 
 # Redeploying a site
 
-**TODO** In theory, just `chef-solo ...` with the specific site JSON... not tested yet...
+Just run `chef-solo` with the specific json for the site to redeploy.
+This shouldn't touch the other hosted sites.
+
+**TODO** Make a nicer script that lets us automatically chef-solo for a
+particular site. And load private data as necessary.
 
 # Developing Chef recipe changes
 

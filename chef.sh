@@ -21,4 +21,6 @@ execute_chef () {
     chef-solo -c solo.rb -j "$1"
   fi
 }
+
 execute_chef "openiaml.org.json"
+execute_chef "index.jevon.org.json"
