@@ -8,3 +8,5 @@
 users_manage "sysadmin" do
   action [ :remove, :create ]
 end
+
+include_recipe "openssh"

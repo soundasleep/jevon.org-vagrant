@@ -1,4 +1,6 @@
 Feature: Hardened server
+  # If we also support production cukes, then the :port
+  # should be pulled from ../private/hardening.json
   Scenario: SSH as jevon
     Given I try to SSH on localhost:2200 as jevon
     Then I should be able to SSH successfully

@@ -1,5 +1,6 @@
 source 'https://supermarket.chef.io'
 
 metadata
-cookbook "sudo"
-cookbook "users"
+# `berks install` actually loads dependencies through metadata.rb
+# cookbook "sudo"
+# cookbook "users"
