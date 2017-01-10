@@ -25,8 +25,8 @@ and everything will get set up automatically.
 # Features supported
 
 - Two static HTML applications
-- - openiaml.org
-- - [index.jevon.org](https://github.com/soundasleep/index-html) (proof-of-concept)
+  - openiaml.org
+  - [index.jevon.org](https://github.com/soundasleep/index-html) (proof-of-concept)
 
 # Private data
 
@@ -52,36 +52,36 @@ particular site. And load private data as necessary.
 # TODO (MVP)
 
 - Domains setup
-- - Jevon.org running (currently PHP, future Rails)
-- - Openiaml.org running (static HTML)
+  - Jevon.org running (currently PHP, future Rails)
+  - Openiaml.org running (static HTML)
 - Infrastructure setup
-- - Iptables configured
-- - Fail2ban configured
+  - Iptables configured
+  - Fail2ban configured
 - Services setup
-- - Apache on 80 and 443 with SSL
-- - MySQL with multiple databases and users per application
-- - SSH on custom port, preferably login with ~/.id_rsa
-- - Disk space warnings
+  - Apache on 80 and 443 with SSL
+  - MySQL with multiple databases and users per application
+  - SSH on custom port, preferably login with ~/.id_rsa
+  - Disk space warnings
 - Applications setup
-- - One static HTML applications
-- - - openiaml.org
-- - Two PHP applications
-- - - Phpinfo
-- - - Redmine
-- - Two Ruby on Rails applications
-- - - Boggle.jevon.org
-- - - ??
-- - One OpenID server
+  - One static HTML applications
+    - openiaml.org
+  - Two PHP applications
+    - Phpinfo
+    - Redmine
+  - Two Ruby on Rails applications
+    - Boggle.jevon.org
+    - ??
+  - One OpenID server
 - Cron jobs set up
-- - Backup local database
-- - Generate awstats
+  - Backup local database
+  - Generate awstats
 - Documented list on how to do each of these
-- - Deploy entire jevon.org to a new VM
-- - Deploy entire jevon.org to a new Linode
-- - Update a single PHP or Ruby application on jevon.org
-- - Update all applications on jevon.org
-- - Adding a new port to close
-- - Modifying fail2ban configuration
+  - Deploy entire jevon.org to a new VM
+  - Deploy entire jevon.org to a new Linode
+  - Update a single PHP or Ruby application on jevon.org
+  - Update all applications on jevon.org
+  - Adding a new port to close
+  - Modifying fail2ban configuration
 
 # Future ideas
 
