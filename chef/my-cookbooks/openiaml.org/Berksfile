@@ -1,5 +1,6 @@
 source 'https://supermarket.chef.io'
 
 metadata
-cookbook "apache2"
-cookbook "apt"
+# `berks install` actually loads dependencies through metadata.rb
+# cookbook "apache2"
+# cookbook "apt"

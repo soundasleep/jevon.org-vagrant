@@ -15,3 +15,4 @@ version          '0.0.2'
 # source_url 'https://github.com/<insert_org_here>/index.jevon.org' if respond_to?(:source_url)
 
 depends "apache2"
+depends "apt"

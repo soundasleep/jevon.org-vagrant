@@ -1,4 +1,4 @@
-Given(/^I visit ([^ ]+) on port (\d+) with hostname ([^ ]+)$/) do |ip, port, hostname|
+Given(/^I visit ([^: ]+):(\d+) with hostname ([^ ]+)$/) do |ip, port, hostname|
   @temp = # File.expand_path("temp.html")
   @temp = Tempfile.new(hostname).path
   File.unlink(@temp) if File.exist?(@temp)

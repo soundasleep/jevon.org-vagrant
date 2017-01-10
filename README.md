@@ -46,8 +46,9 @@ particular site. And load private data as necessary.
 # Developing Chef recipe changes
 
 1. Make a change to my-cookbooks/RECIPE/recipes/default.rb
-2. Run `./update.sh RECIPE` to rebuild Berksfile.lock and re-vendor cookbooks
-3. Run (as root) `chef-solo ...`, as usual
+2. Run `berks install` if it's a new recipe that needs to be included
+3. Run `./update.sh RECIPE` to rebuild Berksfile.lock and re-vendor cookbooks
+4. Run (as root) `chef-solo ...`, as usual
 
 # TODO (MVP)
 
@@ -57,10 +58,10 @@ particular site. And load private data as necessary.
 - Infrastructure setup
   - Iptables configured
   - Fail2ban configured
+  - SSH on custom port, preferably login with ~/.id_rsa
 - Services setup
   - Apache on 80 and 443 with SSL
   - MySQL with multiple databases and users per application
-  - SSH on custom port, preferably login with ~/.id_rsa
   - Disk space warnings
 - Applications setup
   - One static HTML applications

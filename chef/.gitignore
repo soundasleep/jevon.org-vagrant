@@ -3,3 +3,4 @@ chef-stacktrace.out
 cookbooks/
 nodes/
 local-mode-cache/
+*/.delivery

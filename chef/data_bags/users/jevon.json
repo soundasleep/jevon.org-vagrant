@@ -1,0 +1,10 @@
+{
+  "id"       : "jevon",
+  "comment"  : "Jevon Wright",
+  "home"     : "/home/jevon",
+  "groups"   : ["sysadmin"],
+  "ssh_keys" : [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCk7LffUwJ+8WG+5GT6bnvOLfDu6UKV/ZPXC/rXP0N9d7pxdL3oWOqLfJ+URHnIZxcd6XcVQIAIUcwZIpiat/j0CIqBrDhVXZTVuM9pBC11jNPGAIy/2+erc8yZLlj6mgfQ3seY/SLl/OPO7HqZ0Gjyq+q2lUWgnUDgQboMg71zSytSmXMcdIK3lR8j4Qzwlh/bSNnAGuIDYYgVyvAAcUPymNClK/8xtcVgziQsnyUvx4tlgoVlXFFT6sOvhXCuELeJBq4hzAJKpa65ehmcbnwcgvH+hZxx7MAehJg2xyPmzUrVNQcbrJqObtKk37lh1quzxV/KfKwwRlIkrNhA+CwOZh27BzvyTLHc4La/WIeFGFKLKGR/jzvDYWjz3ODl2NlU61Ih6tpmeRO9khL3bCHlwj8VRMmTpAoMpUWdKQctDD5yoIlRNROBxu9749XVUqVXmVO+xNzMLEbZw+1lTga4rK3EKfnd9bORjZ0CPlfQk2bWkbPtb4RdJzY4SvcgOmkzJxlw0m/Us+F6BvEJWQXHf0iAOBlSli9owjqlvd//yAbuiY7tJDqUnC+cy9gk8bFYgbCWiaU9i8vpSxejpZL4pyCxpJyMuJdMBwAIM9WE301fAIPHgueDjeqt8mMGieuV++y6ziCD/mxRCcGMEqmJPXLp5pljm+jJUcOfGfZPeQ== jevon@powershop.co.nz"
+  ],
+  "shell": "\/bin\/bash"
+}

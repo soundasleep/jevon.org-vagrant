@@ -26,6 +26,7 @@ GEM
     minitest (5.10.1)
     multi_json (1.12.1)
     multi_test (0.1.2)
+    net-ssh (3.0.1)
     rspec (3.5.0)
       rspec-core (~> 3.5.0)
       rspec-expectations (~> 3.5.0)
@@ -51,6 +52,7 @@ PLATFORMS
 DEPENDENCIES
   activesupport (~> 4.2)
   cucumber
+  net-ssh
   rspec
   rspec-collection_matchers
 
