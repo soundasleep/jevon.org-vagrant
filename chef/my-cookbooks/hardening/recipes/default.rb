@@ -9,4 +9,5 @@ users_manage "sysadmin" do
   action [ :remove, :create ]
 end
 
+node.default["openssh"]["server"]["print_motd"] = "yes"
 include_recipe "openssh"

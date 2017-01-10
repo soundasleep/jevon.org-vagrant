@@ -24,6 +24,8 @@ and everything will get set up automatically.
 
 # Features supported
 
+- Infrastructure setup
+  - Hardened SSH on custom port, login with ~/.id_rsa
 - Two static HTML applications
   - openiaml.org
   - [index.jevon.org](https://github.com/soundasleep/index-html) (proof-of-concept)
@@ -58,7 +60,6 @@ particular site. And load private data as necessary.
 - Infrastructure setup
   - Iptables configured
   - Fail2ban configured
-  - SSH on custom port, preferably login with ~/.id_rsa
 - Services setup
   - Apache on 80 and 443 with SSL
   - MySQL with multiple databases and users per application
